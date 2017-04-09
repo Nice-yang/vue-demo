@@ -1,18 +1,15 @@
 <template>
-    <div >
-        <ul class="messageList">
-            <li v-for="message in messages">
-                <span><img :src="message.header" /></span>
-                <span class="message_name">{{message.name}}</span>
-                <span class="ms-content">{{message.content}}</span>
-            </li>
-        
-        </ul>
-
-    </div>
+	<div>
+		<ul class="messageList">
+			<li v-for="message in messages">
+				<span><img :src="message.header"  /></span>
+				<span class="message_name">{{message.name}}</span>
+				<span class="ms_content">{{message.content}}</span>
+			</li>
+		</ul>
+	</div>
 </template>
-
-<script>
+<!--<script>
     export default {
         components:{
            
@@ -32,8 +29,29 @@
         methods: {      
         }
     }
+</script>-->
+<script>
+	export default{
+		
+			data(){
+				return {
+					messages:[
+						{header:'../../static/images/b_header2.jpg',name:'Panda',content:'我有一个梦想，做一个画家'},
+						{header:'../../static/images/b_header3.jpg',name:'Panda',content:'我有一个梦想，做一个画家'},
+						{header:'../../static/images/b_header.jpg',name:'Panda',content:'我有一个梦想，做一个画家'},
+						{header:'../../static/images/b_header2.jpg',name:'Panda',content:'我有一个梦想，做一个画家'},
+						{header:'../../static/images/b_header3.jpg',name:'Panda',content:'我有一个梦想，做一个画家'},
+						{header:'../../static/images/b_header.jpg',name:'Panda',content:'我有一个梦想，做一个画家'}
+	
+					]
+				}
+			},
+			methods:{
+				
+			}
+		
+	}
 </script>
-
 <style scoped>
    
     .messageList{

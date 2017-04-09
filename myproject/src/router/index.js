@@ -2,7 +2,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import Home from '@/components/common/Home';
 import DashBoard from '@/components/page/DashBoard';
-import Amcharts from '@/components/page/FormInput';
+import BasicCharts from '@/components/page/BasicCharts';
 import FormInput from '@/components/page/FormInput';
 import FormLayouts from '@/components/page/FormLayouts';
 import BasicTables from '@/components/page/BasicTables';
@@ -34,7 +34,7 @@ export default new Router({
           component:MarkDownPage
         },{
           path:'/BasicCharts',
-          component:Amcharts
+          component:BasicCharts
         },{
           path:'/FormInput',
           component:FormInput

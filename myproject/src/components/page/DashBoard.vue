@@ -2,7 +2,7 @@
 <!--菜单-->
 <template>
 	<div>
-		<v-pageTitle></v-pageTitle><v-pageTitle vtitle="DashBoard"></v-pageTitle>
+		<v-pageTitle vtitle="DashBoard"></v-pageTitle>
 		<div class="clear"></div>
 		<!--标题提示栏-->
 		<el-row :gutter='20'>
